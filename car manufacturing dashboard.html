@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing Showcase</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1199;
+            line-height: 1.6;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: hsl(145, 78%, 48%);
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/'); /* Replace with actual hero image link */
+            background-size: cover;
+            color: #2ba6ee;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            margin-top: 50px;
+        }
+
+        #timeline-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px auto;
+            max-width: 800px;
+            flex-wrap: wrap;
+        }
+
+        .phase {
+            background-color: #007bff;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 150px; /* Adjust height as needed */
+            width: 150px; /* Adjust width as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .phase:hover {
+            background-color: #0056b3;
+        }
+
+        .phase img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .details {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .details p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background-color: #333;
+            color: hsl(123, 87%, 55%);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .phase:hover .tooltip {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Manufacturing Showcase</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Our Car Manufacturing Dashboard</h2>
+                <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.28.06 PM (5).jpeg" alt="Car Manufacturing">
+                <p>Explore the journey of building a car, from market research to sales.</p>
+            </div>
+        </section>
+        <section class="timeline-section">
+            <h2>Car Manufacturing Timeline</h2>
+            <div id="timeline-container">
+                <div class="phase" data-tooltip="Market Research">
+                    <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.39.13 PM (3).jpeg">
+                    <div class="tooltip">Market Research: Analyzing market trends, customer preferences, and competitors.</div>
+                </div>
+                <div class="phase" data-tooltip="Planning">
+                    <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.39.12 PM (1).jpeg">
+                    <div class="tooltip">Planning: Developing strategies for production, resource allocation, and timelines.</div>
+                </div>
+                <div class="phase" data-tooltip="Design">
+                    <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.28.07 PM (2).jpeg">
+                    <div class="tooltip">Design: Creating blueprints and prototypes, focusing on aesthetics and functionality.</div>
+                </div>
+                <div class="phase" data-tooltip="Manufacturing">
+                    <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.28.03 PM (1).jpeg">
+                    <div class="tooltip">Manufacturing: Assembly of car components, quality control, and testing.</div>
+                </div>
+                <div class="phase" data-tooltip="Sales">
+                    <img src="c:\Users\SK SUKLA\Downloads\WhatsApp Image 2024-03-15 at 6.28.04 PM (3).jpeg">
+                    <div class="tooltip">Sales: Marketing the car, distribution, and after-sales services.</div>
+                </div>
+            </div>
+            <div class="details">
+                <p id="phase-details">Hover over a phase to see details</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Manufacturing Showcase. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phaseDetails = document.getElementById('phase-details');
+            const phases = document.querySelectorAll('.phase');
+
+            phases.forEach(phase => {
+                phase.addEventListener('mouseover', function() {
+                    const phaseName = this.getAttribute('data-tooltip');
+                    phaseDetails.textContent = `Details for ${phaseName}: ${this.querySelector('.tooltip').textContent}`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
