@@ -21,9 +21,11 @@ This project is a web-based dashboard designed for managing various aspects of c
 -   3 days to complete it.
   
 #### Screenshot
-![WhatsApp Image 2024-03-15 at 6 28 06 PM (6)](https://github.com/AparnaShukla2509/Car-Manufacturing-Dashboard-/assets/132578968/08bfceea-3f75-404d-964b-ee76300a4b3b)
 ![100227fc-b4d4-4764-b7c1-97492fe20422](https://github.com/AparnaShukla2509/Car-Manufacturing-Dashboard-/assets/132578968/f16ca68c-492e-449e-895f-83a7bbc76d84)
+![WhatsApp Image 2024-03-15 at 6 28 06 PM (6)](https://github.com/AparnaShukla2509/Car-Manufacturing-Dashboard-/assets/132578968/08bfceea-3f75-404d-964b-ee76300a4b3b)
 ![WhatsApp Image 2024-03-15 at 6 28 07 PM (3)](https://github.com/AparnaShukla2509/Car-Manufacturing-Dashboard-/assets/132578968/7ea4cd3a-14ac-4257-b853-04e0197e83cf)
+![WhatsApp Image 2024-03-15 at 6 28 08 PM (4)](https://github.com/AparnaShukla2509/Car-Manufacturing-Dashboard-/assets/132578968/67cc71e0-0019-443a-9045-ee84a3505482)
+
 
 
 
